@@ -1,0 +1,38 @@
+.register h1{
+  text-shadow: -1px -1px 0 rgba(0,0,0,.3);
+  font-weight: 500;
+    line-height: 1.2;
+}
+.deep-dark {
+  background-color: #1c1e22;
+  border: 0 solid rgba(0,0,0,.6);
+  border-radius: 5px;
+  color: #fff;
+}
+input .form-control-user{
+  color: #fff!important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3a3f44;
+  border-color: #22241d;
+}
+hr {
+  margin: 1rem 0;
+  color: #3a3f44;
+  border: 0;
+  border-top: 1px solid;
+  opacity: .25;
+}
+a{
+  text-decoration: none;
+}
+.image{
+  background-image: url('../../assets/image/gaming.ebaf2ffc84f4451d.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.submitButton{
+  margin: auto;
+  width: 95% !important;
+}
