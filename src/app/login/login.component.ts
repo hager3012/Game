@@ -40,8 +40,9 @@ export class LoginComponent {
 
             console.log(data);
             localStorage.setItem('usertoken',`${data.token}`)
-            this._Router.navigate(['/home']);
             this._AuthService.decodeUserData();
+            this._Router.navigate(['/home']);
+
           }else{
             this.msg=data.message
           }
