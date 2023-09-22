@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+.image{
+  width: 80px;
+}
+h4{
+  font-family: 'Xanh Mono', monospace;
+}
+.nav-link{
+  font-size:1rem;
+  font-weight: 400;
+}
+.home a:hover{
+  color: #C6C7C8 !important;
+}
+.navbar{
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+}
+@media (min-width: 768px){
+  .navbar-collapse {
+      display: flex ;
+  }
+  .navLogin{
+    justify-self: flex-end;
+  }
+  }

@@ -1,0 +1,75 @@
+
+<section >
+  <nav class="navbar bg-main w-100  navbar-expand-lg bg-body-tertiary shadow-sm border-bottom border-1 border-dark ">
+    <div class="container-fluid ps-md-5 m-2 me-5">
+      <div class="image me-5">
+        <img src="../../assets/image/logo.png" class="ms-5 w-100">
+      </div>
+      <h4 class="fc-white">Game Over</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5  m-2 ">
+          <li *ngIf="isLogin" class="nav-item">
+            <a class="nav-link  fc-white f-weight"  routerLink="home">Home</a>
+          </li>
+          <li *ngIf="isLogin" class="nav-item">
+            <a class="nav-link fc-gray f-weight"  [routerLink]="['all']" >All</a>
+          </li>
+          <li *ngIf="isLogin" class="nav-item dropdown ">
+            <a class="nav-link f-weight dropdown-toggle fc-gray" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Platforms
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item f-weight" [routerLink]="['Platforms/pc']"  >pc</a></li>
+              <li><a class="dropdown-item f-weight" [routerLink]="['Platforms/browser']" >browser</a></li>
+            </ul>
+          </li>
+          <li *ngIf="isLogin" class="nav-item dropdown ">
+            <a class="nav-link f-weight dropdown-toggle fc-gray" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              sort-by
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item f-weight"  [routerLink]="['sort-by/release-date']">release-date</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['sort-by/popularity']">popularity</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['sort-by/alphabetical']">alphabetical</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['sort-by/relevance']">relevance</a></li>
+            </ul>
+          </li>
+          <li *ngIf="isLogin" class="nav-item dropdown show">
+            <a class="nav-link dropdown-toggle f-weight fc-gray" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/racing']">racing</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/sports']">sports</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/social']">social</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/shooter']">shooter</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/open-world']">open-world</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/zombie']">zombie</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/fantasy']">fantasy</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/action-rpg']">action-rpg</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/action']">action</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/flight']">flight</a></li>
+              <li><a class="dropdown-item f-weight"  [routerLink]="['categories/battle-royale']">battle-royale</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav offset-7  mb-2 mb-lg-0 ">
+          <!-- <li *ngIf="!isLogin" class="nav-item mx-3">
+            <a class="nav-link home active fc-gray fw-mid" routerLink="login">Login</a>
+          </li> -->
+          <li *ngIf="!isLogin" class="nav-item">
+            <a class="nav-link border-1 rounded-2 py-2 px-3 border-info border text-info fw-mid" routerLink="register">join Free</a>
+          </li>
+          <!-- <li *ngIf="isLogin" class="nav-item">
+            <span (click)="logOut()" class="py-2 fw-mid cursor border border-1 border-primary px-3 rounded-2 text-primary" >LogOut</span>
+          </li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
